@@ -524,12 +524,283 @@ img{
 }
 
 /*=============== COMBO ===============*/
+ .combo{ 
+    background-color: var(--first-color);
+    height: 100vh;
+}
+
+.combo .section-title span{
+    color: var(--white-color);
+}
+
+.combo-container{
+    padding-block: 4rem 9rem;
+}
+
+.combo-content{
+    position: relative;
+    display: grid;
+}
+
+.combo-img{
+    width: 320px;
+    justify-self: center;
+    filter: var(--shadow-img);
+    z-index: 5;
+    position: relative;
+}
+
+.combo-numbers{
+    position: relative;
+    top: -13rem;
+    justify-self: center;
+    display: flex;
+    column-gap: 4rem;
+}
+
+.combo-number{
+    display: grid;
+    row-gap: .25rem;
+    text-align: center;
+}
+
+.combo-number span{
+    font-size: var(--h3-font-size);
+    font-family: var(--socond-font);
+}
+
+.combo-number i {
+    font-size: 1.25rem;
+}
+
+.combo-title{
+    font-size: var(--biggest-font-size);
+    color: var(--white-color);
+    line-height: 110%;
+    letter-spacing: 10px;
+}
+
+.combo-titles{
+    position: relative;
+    top: -12.5rem;
+    justify-self: center;
+}
+
+.combo-data{
+    position: relative;
+    top: -19.5rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.combo-info{
+    background-color: var(--white-color);
+    padding: .75rem;
+    border-radius: .5rem;
+    font-size: var(--small-font-size);
+} 
+
+.combo-info b{
+    font-family: var(--socond-font);
+}
+
+.combo-price{
+    background-color: var(--black-color);
+    color: var(--first-color);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    font-size: var(--h1-font-size);
+    font-family: var(--socond-font);
+}
 
 
 /*=============== CONTACT ===============*/
+.contact-container{
+    padding-block: 4rem 3rem;
+    row-gap: 3rem;
+    justify-content: center;
+}
 
+.contact-data{
+    position: relative;
+}
+
+.contact-title{
+    font-size: var(--bigger-font-size);
+}
+
+.contact-title span{
+    font-size: var(--biggest-font-size);
+    color: var(--first-color);
+}
+
+.contact-img-1,
+.contact-img-2{
+    position: absolute;
+    filter: var(--shadow-img);
+}
+
+.contact-img-1{
+    width: 110px;
+    top:3rem;
+    right: 2rem;
+}
+
+.contact-img-2{
+    width:90px;
+    top:3rem;
+    right:2rem;
+}
+
+.contact-dam-1,
+.contact-dam-2,
+.contact-dam-3,
+.contact-dam-4{
+    position: absolute;
+}
+
+.contact-dam-1{
+    width: 60px;
+    top: -4rem;
+    right: 1rem;
+}
+
+.contact-dam-2{
+    width: 80px;
+    right: -2rem;
+    bottom: -6rem;
+}
+
+.contact-dam-3{
+    width: 60px;
+    bottom: -4rem;
+    left: 0rem;
+}
+
+.contact-dam-4{
+    width: 80px;
+    top: -6rem;
+    left: -2rem;
+}
+
+.contact-info{
+    text-align: center;
+}
+
+.contact-subtitle{
+    font-size: var(--h3-font-size);
+    margin-bottom: .75rem;
+}
+
+.contact-social{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.contact-social-link{
+    font-size: 1.5rem;
+    color: var(--first-color);
+    transition: transform .4s;
+}
+
+.contact-social-link:hover{
+    transform: translateY(-.25rem);
+}
+
+.contact-address{
+    color: var(--text-color);
+    font-style: initial;
+    font-weight: var(--font-semi-bold);
+}
 
 /*=============== FOOTER ===============*/
+.footer{
+    background-color: var(--first-color);
+    padding-block: 3rem 2rem;
+}
+
+.footer-container,
+.footer-content{
+    row-gap: 3rem;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    column-gap: .25rem;
+}
+
+.footer-logo img{
+    width: 1.5rem;
+}
+
+.footer-logo span{
+    color: var(--black-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.footer-social,
+.footer-pay,
+.footer-form{
+    display: flex;
+    justify-self: center;
+    column-gap: 1rem;
+}
+
+.footer-title{
+    font-size: var(--h3-font-size);
+    margin-bottom: .75rem;
+    text-align: center;
+}
+
+.footer-social-link{
+    font-size:1.5rem;
+    color: var(--black-color);
+    transition: transform .4s;
+}
+
+.footer-social-link:hover{
+    transform: translateY(-.25rem);
+}
+
+.footer-pay-card{
+    width: 30px;
+}
+
+.footer-form{
+    background-color: var(--white-color);
+    padding: .5rem;
+    border-radius:1rem;
+}
+
+.footer-input{
+    width: 100%;
+    background: transparent;
+    padding-left: .5rem;
+    color: var(--black-color);
+}
+
+.footer-input::placeholder{
+    color: var(--black-color);
+}
+
+.footer-button{
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.footer-copy{
+    display: block;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: var(--small-font-size);
+}
+
 
 
 /*=============== SCROLL BAR ===============*/
