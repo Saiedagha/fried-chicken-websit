@@ -35,9 +35,34 @@ const scrollheader = () => {
 window.addEventListener('scroll', scrollheader)
 
 // *=== show scroll up ///
+const scrollup = () =>{
+    const scrollup = document.getElementById('scroll-up')
+     this.scrollY >= 350 ? scrollup.classList.add('show-scroll')
+                        : scrollup.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollup)
 
+// === Scroll sections active link ===
+const sections = document.querySelectorAll('section[id]');
 
-// === scroll sections active link///
+const scrollActive = () => {
+  const scrollY = window.scrollY;
+
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 58;
+    const sectionId = current.getAttribute('id');
+    const sectionClass = document.querySelector('.nav-menu a[href*="' + sectionId + '"]');
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionClass.classList.add('active-link');
+    } else {
+      sectionClass.classList.remove('active-link');
+    }
+  });
+};
+
+window.addEventListener('scroll', scrollActive);
 
 
 // === scroll reveal animation///
